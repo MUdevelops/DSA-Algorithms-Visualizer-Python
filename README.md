@@ -1,74 +1,441 @@
 <div align="center">
 
-# 🧠 DSA Algorithms Visualizer — Python
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,50:312e81,100:7c3aed&text=DSA%20ALGORITHMS%20VISUALIZER&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=See%20Algorithms.%20Understand%20Algorithms.%20Master%20Algorithms.&descAlignY=58&descSize=16&animation=twinkling" width="100%"/>
 
-### **Learn. Visualize. Understand. Master.**
+<br/>
 
-An interactive desktop application that brings **Data Structures & Algorithms to life** through step-by-step animations, visual explanations, complexity analysis, practice problems, quizzes, and algorithm comparisons.
+# 🧠 DSA Algorithms Visualizer
 
-<br>
+### **Turn invisible algorithms into visible intuition.**
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Tkinter](https://img.shields.io/badge/GUI-Tkinter-FFB000?style=for-the-badge)
-![Algorithms](https://img.shields.io/badge/Algorithms-60%2B-7C3AED?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Practice%20Problems-50%2B-10B981?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-EF4444?style=for-the-badge)
+<p>
+  <strong>60+ Algorithms</strong> ·
+  <strong>50+ Practice Problems</strong> ·
+  <strong>Interactive Animations</strong> ·
+  <strong>Learn Mode</strong> ·
+  <strong>Quizzes</strong>
+</p>
 
-<br>
+<br/>
 
-**A visual-first approach to learning DSA — built entirely with Python.**
+<a href="https://github.com/MUdevelops/DSA-Algorithms-Visualizer-Python">
+<img src="https://img.shields.io/github/stars/MUdevelops/DSA-Algorithms-Visualizer-Python?style=for-the-badge&logo=github&label=STARS" alt="GitHub Stars"/>
+</a>
+<a href="https://github.com/MUdevelops/DSA-Algorithms-Visualizer-Python/forks">
+<img src="https://img.shields.io/github/forks/MUdevelops/DSA-Algorithms-Visualizer-Python?style=for-the-badge&logo=github&label=FORKS" alt="GitHub Forks"/>
+</a>
+<a href="https://github.com/MUdevelops/DSA-Algorithms-Visualizer-Python/blob/main/LICENSE">
+<img src="https://img.shields.io/github/license/MUdevelops/DSA-Algorithms-Visualizer-Python?style=for-the-badge&label=LICENSE" alt="MIT License"/>
+</a>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tkinter-Desktop%20GUI-FFB000?style=flat-square"/>
+<img src="https://img.shields.io/badge/Algorithms-60%2B-7C3AED?style=flat-square"/>
+<img src="https://img.shields.io/badge/Practice-50%2B-10B981?style=flat-square"/>
+<img src="https://img.shields.io/badge/Dependencies-Standard%20Library-0891B2?style=flat-square"/>
+
+<br/><br/>
+
+<a href="#-features">Features</a> · <a href="#-visual-tour">Visual Tour</a> · <a href="#-algorithms">Algorithms</a> · <a href="#-installation">Installation</a> · <a href="#-how-it-works">How It Works</a> · <a href="#-contributing">Contributing</a>
 
 </div>
 
 ---
 
-## ✨ Why This Project?
+## ⚡ The Idea
 
-Learning algorithms from static code can be difficult.
+Most DSA resources ask you to **read** an algorithm.
 
-This project turns abstract algorithms into **interactive visual experiences** so you can watch every comparison, swap, traversal, node operation, graph relaxation, and dynamic-programming step happen on screen.
+This project lets you **watch it think**.
 
-> **Don't just read the algorithm. Watch it execute.**
+**DSA Algorithms Visualizer** is an interactive desktop learning environment built with **Python + Tkinter** that transforms algorithms and data structures into animated, visual experiences.
 
-The application combines:
+Instead of staring at:
 
-* 🎞️ Step-by-step algorithm animations
-* 📊 Visual representations of data structures
-* 📚 Built-in algorithm explanations
-* ⏱️ Time & space complexity analysis
-* 🧩 Practice problems
-* 🧠 Interactive quizzes
-* ⚖️ Algorithm comparison
-* 🔢 Custom user input
-* 🐍 Python implementations
-* 🎛️ Animation controls and speed adjustment
+```text
+for i in range(n):
+    ...
+```
+
+you can watch:
+
+```text
+INPUT
+  ↓
+COMPARE
+  ↓
+HIGHLIGHT
+  ↓
+SWAP / UPDATE
+  ↓
+NEXT STEP
+  ↓
+RESULT
+```
+
+### The learning loop
+
+```text
+┌──────────────┐
+│   DISCOVER   │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│    LEARN     │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│   VISUALIZE  │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│   PRACTICE   │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│     QUIZ     │
+└──────┬───────┘
+       ↓
+┌──────────────┐
+│    MASTER    │
+└──────────────┘
+```
 
 ---
 
-## 🚀 What You Get
+# ✨ Why You'll Love It
 
-| Feature                     | Description                                                |
-| --------------------------- | ---------------------------------------------------------- |
-| 🎞️ **Visual Animations**   | Watch algorithms execute step-by-step                      |
-| ⏯️ **Animation Controls**   | Start, pause, step, back, reset and control speed          |
-| 📚 **Learn Mode**           | Description, working, examples, complexity and Python code |
-| 🧩 **Practice Problems**    | 50+ problems with difficulty/category filtering            |
-| 🧠 **Quiz Mode**            | Multiple-choice questions with instant feedback            |
-| 📊 **Algorithm Comparison** | Compare sorting and searching algorithms                   |
-| 🔢 **Custom Input**         | Enter your own arrays and strings                          |
-| 🎲 **Random Data**          | Generate data with configurable size/range                 |
-| 🔍 **Live Search**          | Quickly find algorithms in the library                     |
-| 📋 **Copy Code**            | Copy Python implementations directly                       |
-| 🛡️ **Error Handling**      | Friendly handling of invalid input                         |
-| 🌙 **Modern UI**            | Dark educational interface built with Tkinter              |
+<table>
+<tr>
+<td width="50%">
+
+### 🎞️ See Every Step
+
+Don't settle for a final answer.
+
+Pause an algorithm, move one operation at a time, go backwards, reset, or change animation speed.
+
+</td>
+<td width="50%">
+
+### 📚 Learn While You Watch
+
+Each algorithm can be explored through:
+
+* Description
+* How it works
+* Examples
+* Complexity
+* Python implementation
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🧩 Practice What You Learn
+
+More than **50 practice problems** organized around DSA concepts, with difficulty/category filtering, hints and solutions.
+
+</td>
+<td>
+
+### 🧠 Test Your Understanding
+
+Built-in quiz mode provides multiple-choice questions, instant feedback and score tracking.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 📊 Compare Algorithms
+
+Compare sorting and searching approaches side-by-side and understand their trade-offs.
+
+</td>
+<td>
+
+### 🎨 Adaptive Visualizations
+
+The visual language changes with the data structure:
+
+`Bars` · `Nodes` · `Graphs` · `Grids` · `Characters`
+
+</td>
+</tr>
+</table>
 
 ---
 
-# 🧮 Algorithms & Topics
+# 🎬 Visual Tour
 
-The visualizer covers **60+ algorithms and concepts** across multiple DSA categories.
+> A selection of the actual application screens — all screenshots are maintained in the repository's `Screenshots/` directory.
 
-### 🔢 Sorting
+## 🏠 Start Here
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Splash Screen**
+
+<img src="Screenshots/Splash Screen.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Home**
+
+<img src="Screenshots/Home.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Dashboard**
+
+<img src="Screenshots/Dashboard.png" width="100%"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Learn → Practice → Test
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Practice Problems**
+
+<img src="Screenshots/Practice Problems.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Quiz Mode**
+
+<img src="Screenshots/Quizes.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Algorithm Comparison**
+
+<img src="Screenshots/Sorting Algorithm Comparison.png" width="100%"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+# 📊 Sorting & Searching
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Array Sorted**
+
+<img src="Screenshots/Array Sorted.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Swapping Animation**
+
+<img src="Screenshots/Swapping Animation.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Finding Number**
+
+<img src="Screenshots/Finding Number.png" width="100%"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+**Finding Smallest**
+
+<img src="Screenshots/Finding Smallest Number.png" width="100%"/>
+
+</td>
+<td align="center">
+
+**Minimum Number**
+
+<img src="Screenshots/Minimum Number Find.png" width="100%"/>
+
+</td>
+<td></td>
+</tr>
+</table>
+
+---
+
+# 🔗 Linked Lists, Stacks & Queues
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Linked List**
+
+<img src="Screenshots/Linkdlist Built.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Cycle Detection**
+
+<img src="Screenshots/Detect Cycle.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**No Cycle**
+
+<img src="Screenshots/No Cyycle.png" width="100%"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+**Stack Push / Pop**
+
+<img src="Screenshots/Stack Pop and Push Visualization.png" width="100%"/>
+
+</td>
+<td align="center">
+
+**Queue Dequeue**
+
+<img src="Screenshots/dequeue.png" width="100%"/>
+
+</td>
+<td></td>
+</tr>
+</table>
+
+---
+
+# 🌳 Trees & Graphs
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Binary Search Tree**
+
+<img src="Screenshots/Binary Search Tree.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Level Order BFS**
+
+<img src="Screenshots/Level Order BFS.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Dijkstra**
+
+<img src="Screenshots/Dijikstra Animation.png" width="100%"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+**Bellman-Ford**
+
+<img src="Screenshots/Bellman Ford Algorithm.png" width="100%"/>
+
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+---
+
+# 🧠 Problem-Solving Visualizations
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**Anagram**
+
+<img src="Screenshots/ANAGRAM.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Duplicate Checker**
+
+<img src="Screenshots/Duplicate Checker.png" width="100%"/>
+
+</td>
+<td align="center" width="33%">
+
+**Character Repetition**
+
+<img src="Screenshots/c-repeats-1-time.png" width="100%"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+**Huffman Coding**
+
+<img src="Screenshots/Huffman Codes.png" width="100%"/>
+
+</td>
+<td align="center">
+
+**Climbing Stairs**
+
+<img src="Screenshots/Climbing Stairs Algorithm.png" width="100%"/>
+
+</td>
+<td align="center">
+
+**Algorithm Animation**
+
+<img src="Screenshots/6+63 Animation.png" width="100%"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🧮 Algorithms
+
+The application currently covers **60+ algorithms and DSA concepts** across major categories.
+
+<details>
+<summary><strong>🔢 Sorting</strong></summary>
+
+<br/>
 
 * Bubble Sort
 * Selection Sort
@@ -79,282 +446,251 @@ The visualizer covers **60+ algorithms and concepts** across multiple DSA catego
 * Counting Sort
 * Radix Sort
 * Bucket Sort
-* And more
+* And additional sorting-oriented demonstrations
 
-### 🔎 Searching
+</details>
+
+<details>
+<summary><strong>🔎 Searching</strong></summary>
+
+<br/>
 
 * Linear Search
 * Binary Search
-* Minimum/maximum element operations
-* Search-oriented array visualizations
+* Minimum / Maximum operations
+* Search visualizations
 
-### 🧱 Arrays
+</details>
 
-Interactive array operations and visual demonstrations including:
+<details>
+<summary><strong>📦 Arrays</strong></summary>
+
+<br/>
 
 * Searching
 * Sorting
-* Minimum/maximum
+* Minimum / Maximum
 * Duplicate detection
 * Custom array input
+* Random array generation
 
-### 🔤 Strings
+</details>
+
+<details>
+<summary><strong>🔤 Strings</strong></summary>
+
+<br/>
 
 * Anagram checking
-* Character frequency concepts
+* Character frequency
 * Repeated-character analysis
-* String-oriented algorithm demonstrations
+* String-based algorithm demonstrations
 
-### 🔗 Linked Lists
+</details>
+
+<details>
+<summary><strong>🔗 Linked Lists</strong></summary>
+
+<br/>
 
 * Linked-list construction
 * Traversal
 * Cycle detection
-* Cycle/no-cycle visualization
+* Cycle visualization
 
-### 📚 Stack & Queue
+</details>
+
+<details>
+<summary><strong>📚 Stack & Queue</strong></summary>
+
+<br/>
 
 * Push
 * Pop
 * Enqueue
 * Dequeue
-* Stack/queue visualization
+* Interactive visualization
 
-### #️⃣ Hashing
+</details>
+
+<details>
+<summary><strong>#️⃣ Hashing</strong></summary>
+
+<br/>
 
 * Duplicate checking
 * Frequency-based operations
-* Hashing demonstrations
+* Hash-oriented demonstrations
 
-### 🌳 Trees
+</details>
+
+<details>
+<summary><strong>🌳 Trees</strong></summary>
+
+<br/>
 
 * Binary Search Trees
 * Tree traversal
-* Level-order traversal / BFS
-* Tree visualization
+* Level-order traversal
+* BFS visualization
 
-### 🕸️ Graphs
+</details>
+
+<details>
+<summary><strong>🕸️ Graphs</strong></summary>
+
+<br/>
 
 * Breadth-First Search
 * Depth-First Search
 * Dijkstra's Algorithm
 * Bellman-Ford
-* Graph-based visualizations
+* Graph traversal / shortest-path visualizations
 
-### 💡 Dynamic Programming
+</details>
+
+<details>
+<summary><strong>💡 Dynamic Programming</strong></summary>
+
+<br/>
 
 * Climbing Stairs
-* Memoization/tabulation-oriented demonstrations
-* DP visualizations
+* DP-style demonstrations
+* Table/grid visualization
 
-### 🧠 Greedy & Other Algorithms
+</details>
+
+<details>
+<summary><strong>🧠 Greedy & Divide & Conquer</strong></summary>
+
+<br/>
 
 * Huffman Coding
 * Divide & Conquer concepts
-* Additional algorithmic problem demonstrations
+* Additional algorithmic demonstrations
+
+</details>
 
 ---
 
-# 🎬 Visual Experience
+# 🎛️ Animation Controls
 
-The application is designed around **visual feedback rather than static output**.
+The visualizer isn't just a "Run" button.
 
-Every category uses a representation suited to the underlying data:
+You control the execution.
 
 ```text
-Arrays        →  📊 Bars / Elements
-Strings       →  🔤 Character Boxes
-Linked Lists  →  🔗 Nodes + Pointers
-Stacks        →  📚 Vertical Structures
-Queues        →  🚶 Sequential Elements
-Trees         →  🌳 Node Diagrams
-Graphs        →  🕸️ Nodes + Edges
-DP            →  🧮 Tables / Grids
+                  ALGORITHM
+                      │
+                      ▼
+             ┌─────────────────┐
+             │   INITIALIZE    │
+             └────────┬────────┘
+                      │
+          ┌───────────▼───────────┐
+          │       EXECUTE         │
+          └───────────┬───────────┘
+                      │
+          ┌───────────▼───────────┐
+          │      VISUAL STEP      │
+          └───────────┬───────────┘
+                      │
+             ┌────────┴────────┐
+             │                 │
+          CONTINUE            DONE
+             │                 │
+             └───────┐         │
+                     ▼         ▼
+                  NEXT STEP   RESULT
 ```
 
----
+### Available controls
 
-# 📸 Screenshots
-
-> **All screenshots below are included directly from the repository's `Screenshots/` directory.**
-
-## 🏠 Core Interface
-
-### Splash Screen
-
-<p align="center">
-  <img src="Screenshots/Splash Screen.png" width="800" alt="DSA Visualizer Splash Screen">
-</p>
-
-### Home
-
-<p align="center">
-  <img src="Screenshots/Home.png" width="800" alt="DSA Visualizer Home">
-</p>
-
-### Dashboard
-
-<p align="center">
-  <img src="Screenshots/Dashboard.png" width="800" alt="DSA Visualizer Dashboard">
-</p>
+| Control     | Purpose                  |
+| ----------- | ------------------------ |
+| ▶ **Start** | Run the visualization    |
+| ⏸ **Pause** | Freeze execution         |
+| ⏭ **Step**  | Advance manually         |
+| ⏮ **Back**  | Move to a previous state |
+| ↻ **Reset** | Return to initial state  |
+| ⚡ **Speed** | Adjust animation speed   |
 
 ---
 
-# 🧩 Practice & Learning
+# 🎨 One App — Multiple Visual Languages
 
-### Practice Problems
+Different data structures deserve different visual representations.
 
-<p align="center">
-  <img src="Screenshots/Practice Problems.png" width="800" alt="Practice Problems">
-</p>
+```text
+┌───────────────────────────────────────────────┐
+│               VISUALIZATION ENGINE            │
+├───────────────────────────────────────────────┤
+│                                               │
+│  Arrays       ███████████  ███████  ████      │
+│                                               │
+│  Strings      [ A ] [ N ] [ A ] [ G ]         │
+│                                               │
+│  Linked List  [10] → [20] → [30] → NULL       │
+│                                               │
+│  Stack             [30]                       │
+│                    [20]                       │
+│                    [10]                       │
+│                                               │
+│  Tree                  50                     │
+│                      /    \                   │
+│                    30      70                 │
+│                                               │
+│  Graph          ○────○────○                  │
+│                  \    \                       │
+│                   ○────○                      │
+│                                               │
+│  DP            ┌────┬────┬────┐              │
+│                │  1 │  1 │  2 │              │
+│                ├────┼────┼────┤              │
+│                │  1 │  2 │  3 │              │
+│                └────┴────┴────┘              │
+│                                               │
+└───────────────────────────────────────────────┘
+```
 
-### Quiz Mode
-
-<p align="center">
-  <img src="Screenshots/Quizes.png" width="800" alt="Quiz Mode">
-</p>
-
-### Sorting Algorithm Comparison
-
-<p align="center">
-  <img src="Screenshots/Sorting Algorithm Comparison.png" width="800" alt="Sorting Algorithm Comparison">
-</p>
-
----
-
-# 📊 Sorting & Searching
-
-### Sorted Array
-
-<p align="center">
-  <img src="Screenshots/Array Sorted.png" width="800" alt="Sorted Array Visualization">
-</p>
-
-### Swapping Animation
-
-<p align="center">
-  <img src="Screenshots/Swapping Animation.png" width="800" alt="Sorting Swapping Animation">
-</p>
-
-### Finding a Number
-
-<p align="center">
-  <img src="Screenshots/Finding Number.png" width="800" alt="Finding Number Visualization">
-</p>
-
-### Finding the Smallest Number
-
-<p align="center">
-  <img src="Screenshots/Finding Smallest Number.png" width="800" alt="Finding Smallest Number">
-</p>
-
-### Minimum Number
-
-<p align="center">
-  <img src="Screenshots/Minimum Number Find.png" width="800" alt="Minimum Number Visualization">
-</p>
+The project explicitly adapts its visualization style to arrays, strings, linked lists, trees, graphs and dynamic programming.
 
 ---
 
-# 🔗 Linked Lists, Stacks & Queues
+# 🧭 Learning Architecture
 
-### Linked List Construction
-
-<p align="center">
-  <img src="Screenshots/Linkdlist Built.png" width="800" alt="Linked List Construction">
-</p>
-
-### Cycle Detection
-
-<p align="center">
-  <img src="Screenshots/Detect Cycle.png" width="800" alt="Linked List Cycle Detection">
-</p>
-
-### No Cycle
-
-<p align="center">
-  <img src="Screenshots/No Cyycle.png" width="800" alt="Linked List No Cycle">
-</p>
-
-### Stack — Push & Pop
-
-<p align="center">
-  <img src="Screenshots/Stack Pop and Push Visualization.png" width="800" alt="Stack Push and Pop Visualization">
-</p>
-
-### Queue — Dequeue
-
-<p align="center">
-  <img src="Screenshots/dequeue.png" width="800" alt="Queue Dequeue Visualization">
-</p>
-
----
-
-# 🌳 Trees & Graph Algorithms
-
-### Binary Search Tree
-
-<p align="center">
-  <img src="Screenshots/Binary Search Tree.png" width="800" alt="Binary Search Tree Visualization">
-</p>
-
-### Level Order BFS
-
-<p align="center">
-  <img src="Screenshots/Level Order BFS.png" width="800" alt="Level Order BFS">
-</p>
-
-### Dijkstra's Algorithm
-
-<p align="center">
-  <img src="Screenshots/Dijikstra Animation.png" width="800" alt="Dijkstra Algorithm Animation">
-</p>
-
-### Bellman-Ford Algorithm
-
-<p align="center">
-  <img src="Screenshots/Bellman Ford Algorithm.png" width="800" alt="Bellman Ford Algorithm">
-</p>
-
----
-
-# 🧠 Algorithms & Problem Solving
-
-### Anagram
-
-<p align="center">
-  <img src="Screenshots/ANAGRAM.png" width="800" alt="Anagram Algorithm">
-</p>
-
-### Duplicate Checker
-
-<p align="center">
-  <img src="Screenshots/Duplicate Checker.png" width="800" alt="Duplicate Checker">
-</p>
-
-### Character Repetition
-
-<p align="center">
-  <img src="Screenshots/c-repeats-1-time.png" width="800" alt="Character Repetition Algorithm">
-</p>
-
-### Huffman Coding
-
-<p align="center">
-  <img src="Screenshots/Huffman Codes.png" width="800" alt="Huffman Coding">
-</p>
-
-### Climbing Stairs
-
-<p align="center">
-  <img src="Screenshots/Climbing Stairs Algorithm.png" width="800" alt="Climbing Stairs Algorithm">
-</p>
-
-### Algorithm Animation
-
-<p align="center">
-  <img src="Screenshots/6+63 Animation.png" width="800" alt="Algorithm Animation">
-</p>
+```text
+                           ┌──────────────┐
+                           │  ALGORITHM    │
+                           │   LIBRARY     │
+                           └──────┬───────┘
+                                  │
+                 ┌────────────────┼────────────────┐
+                 │                │                │
+                 ▼                ▼                ▼
+           ┌──────────┐     ┌──────────┐    ┌──────────┐
+           │   LEARN  │     │ VISUALIZE│    │ COMPARE  │
+           └─────┬────┘     └─────┬────┘    └─────┬────┘
+                 │                │                │
+                 ▼                ▼                ▼
+           ┌──────────┐     ┌──────────┐    ┌──────────┐
+           │ THEORY   │     │ ANIMATION│    │ TRADEOFFS│
+           └─────┬────┘     └─────┬────┘    └─────┬────┘
+                 │                │                │
+                 └────────────────┼────────────────┘
+                                  ▼
+                         ┌─────────────────┐
+                         │    PRACTICE     │
+                         └────────┬────────┘
+                                  ▼
+                         ┌─────────────────┐
+                         │      QUIZ       │
+                         └────────┬────────┘
+                                  ▼
+                         ┌─────────────────┐
+                         │    MASTERY 🧠   │
+                         └─────────────────┘
+```
 
 ---
 
@@ -362,137 +698,28 @@ DP            →  🧮 Tables / Grids
 
 <div align="center">
 
-| Technology                     | Purpose                          |
-| ------------------------------ | -------------------------------- |
-| 🐍 **Python 3.10+**            | Core programming language        |
-| 🖥️ **Tkinter**                | Desktop GUI                      |
-| 🎨 **ttk**                     | Modern widget styling            |
-| 🧮 **Python Standard Library** | Algorithms and application logic |
+| Layer              | Technology                            |
+| ------------------ | ------------------------------------- |
+| **Language**       | Python 3.10+                          |
+| **GUI**            | Tkinter                               |
+| **Widget Styling** | ttk + custom styling                  |
+| **Visualization**  | Tkinter Canvas / native GUI rendering |
+| **Algorithms**     | Python                                |
+| **Architecture**   | Single-file desktop application       |
+| **Dependencies**   | Python standard library               |
 
 </div>
 
-The project intentionally keeps the architecture lightweight: the main application is contained in a single `dsa_visualizer.py` file and does not require third-party Python packages. Tkinter is normally included with Python, although Linux installations may require the system Tk package.
+The repository describes the application as a single-file project centered on `dsa_visualizer.py`, with no external dependencies beyond the standard library.
 
 ---
 
-# 📦 Installation
-
-## Requirements
-
-* Python **3.10 or newer**
-* Tkinter
-* Git
-
-### Linux
-
-If Tkinter is not already installed:
-
-```bash
-sudo apt install python3-tk
-```
-
-## Clone the Repository
-
-```bash
-git clone https://github.com/MUdevelops/DSA-Algorithms-Visualizer-Python.git
-cd DSA-Algorithms-Visualizer-Python
-```
-
-## Run
-
-```bash
-python dsa_visualizer.py
-```
-
-That's it.
-
-No virtual environment is required.
-
-No external Python packages are required.
-
----
-
-# 🎛️ How to Use
-
-### 1. Launch the application
-
-Start the program with:
-
-```bash
-python dsa_visualizer.py
-```
-
-### 2. Choose an algorithm
-
-Browse or search through the algorithm library.
-
-### 3. Configure your data
-
-Use:
-
-* Custom input
-* Random data
-* Array size
-* Value range
-
-### 4. Start visualization
-
-Use the animation controls:
-
-```text
-▶ Start
-⏸ Pause
-⏭ Step
-⏮ Back
-↻ Reset
-⚡ Speed
-```
-
-### 5. Learn while watching
-
-Explore:
-
-* Algorithm description
-* How it works
-* Example
-* Time complexity
-* Space complexity
-* Python implementation
-
-### 6. Test yourself
-
-Move from visualization to:
-
-* Practice Problems
-* Quizzes
-* Algorithm Comparison
-
----
-
-# ⏱️ Complexity at a Glance
-
-| Algorithm      |       Best |    Average |      Worst |     Space |
-| -------------- | ---------: | ---------: | ---------: | --------: |
-| Bubble Sort    |       O(n) |      O(n²) |      O(n²) |      O(1) |
-| Selection Sort |      O(n²) |      O(n²) |      O(n²) |      O(1) |
-| Insertion Sort |       O(n) |      O(n²) |      O(n²) |      O(1) |
-| Merge Sort     | O(n log n) | O(n log n) | O(n log n) |      O(n) |
-| Quick Sort     | O(n log n) | O(n log n) |      O(n²) | O(log n)* |
-| Heap Sort      | O(n log n) | O(n log n) | O(n log n) |      O(1) |
-| Binary Search  |       O(1) |   O(log n) |   O(log n) |      O(1) |
-
-> *Space complexity for Quick Sort depends on the implementation and recursion depth.
-
-The application provides algorithm-specific complexity information inside **Learn Mode**.
-
----
-
-# 🏗️ Project Structure
+# 📁 Project Structure
 
 ```text
 DSA-Algorithms-Visualizer-Python/
 │
-├── Screenshots/
+├── 📁 Screenshots/
 │   ├── Splash Screen.png
 │   ├── Home.png
 │   ├── Dashboard.png
@@ -520,179 +747,366 @@ DSA-Algorithms-Visualizer-Python/
 │   ├── Climbing Stairs Algorithm.png
 │   └── 6+63 Animation.png
 │
-├── dsa_visualizer.py
-├── LICENSE
-└── README.md
+├── 🐍 dsa_visualizer.py
+├── 📄 LICENSE
+└── 📘 README.md
 ```
+
+The repository currently contains the visualizer source, license, README and a dedicated screenshot collection.
 
 ---
 
-# 🧠 Educational Philosophy
+# 🚀 Installation
 
-This project follows a simple principle:
+## Prerequisites
 
-```text
-          CODE
-           │
-           ▼
-      ALGORITHM
-           │
-           ▼
-      VISUALIZATION
-           │
-           ▼
-       PRACTICE
-           │
-           ▼
-        QUIZ
-           │
-           ▼
-       MASTERY
+* **Python 3.10+**
+* **Tkinter**
+* Git
+
+The repository notes Python 3.10+ and states it was tested with Python 3.11.9. On Linux, Tkinter may need to be installed separately.
+
+### Linux
+
+```bash
+sudo apt install python3-tk
 ```
 
-Instead of treating DSA as something you only memorize, the visualizer encourages learners to:
+## Clone
 
-**See → Understand → Experiment → Practice → Test → Master**
+```bash
+git clone https://github.com/MUdevelops/DSA-Algorithms-Visualizer-Python.git
+```
+
+## Enter the project
+
+```bash
+cd DSA-Algorithms-Visualizer-Python
+```
+
+## Launch
+
+```bash
+python dsa_visualizer.py
+```
+
+### That's it.
+
+No `pip install`.
+
+No package manager.
+
+No database.
+
+No web server.
+
+Just Python.
 
 ---
 
-# 🎯 Who Is This For?
+# 🖥️ Usage
+
+### 01 — Choose
+
+Search or browse the algorithm library.
+
+### 02 — Configure
+
+Use custom input or generate random data.
+
+### 03 — Visualize
+
+Start the animation and watch the algorithm execute.
+
+### 04 — Control
+
+Pause, step forward, go backward, reset and change speed.
+
+### 05 — Learn
+
+Read the explanation, example, complexity and implementation.
+
+### 06 — Practice
+
+Solve problems related to the concept.
+
+### 07 — Test
+
+Use quizzes to verify your understanding.
+
+---
+
+# 📈 Complexity Cheat Sheet
+
+| Algorithm      |       Best |    Average |      Worst |     Space |
+| -------------- | ---------: | ---------: | ---------: | --------: |
+| Bubble Sort    |       O(n) |      O(n²) |      O(n²) |      O(1) |
+| Selection Sort |      O(n²) |      O(n²) |      O(n²) |      O(1) |
+| Insertion Sort |       O(n) |      O(n²) |      O(n²) |      O(1) |
+| Merge Sort     | O(n log n) | O(n log n) | O(n log n) |      O(n) |
+| Quick Sort     | O(n log n) | O(n log n) |      O(n²) | O(log n)* |
+| Heap Sort      | O(n log n) | O(n log n) | O(n log n) |      O(1) |
+| Binary Search  |       O(1) |   O(log n) |   O(log n) |      O(1) |
+
+> `*` Quick Sort space depends on recursion depth and implementation.
+
+---
+
+# 🎯 Who Is It For?
 
 ### 👨‍🎓 Students
 
-Understand difficult DSA concepts through interactive visualizations.
+Build intuition instead of memorizing pseudocode.
 
-### 👩‍🏫 Teachers
+### 👨‍💻 Developers
 
-Use animations as a classroom or demonstration aid.
+Refresh DSA fundamentals quickly.
 
-### 💻 Developers
+### 🎤 Interview Candidates
 
-Refresh algorithmic fundamentals quickly.
+Review algorithms, complexity and problem-solving patterns.
 
-### 🧑‍💻 Interview Candidates
+### 👩‍🏫 Educators
 
-Review algorithms, complexities, and practice problems in one place.
+Use visual execution to demonstrate algorithm behavior.
 
 ### 🧠 DSA Enthusiasts
 
-Experiment with algorithms using custom data and visualization controls.
+Experiment with custom input and execution controls.
 
 ---
 
-# 🌟 Highlights
+# 💎 What Makes This Different?
 
-<div align="center">
+There are countless algorithm implementations.
 
-### 60+ Algorithms
+There are countless DSA cheat sheets.
 
-Explore a broad collection of algorithms and DSA concepts.
+There are countless problem lists.
 
-### 🎞️ Interactive Animations
+This project combines them into one learning loop:
 
-Watch the algorithm execute instead of reading static output.
+```text
+       THEORY
+          │
+          ▼
+     ┌─────────┐
+     │ VISUAL  │
+     │ EXECUTION│
+     └────┬────┘
+          │
+          ▼
+       CONTROL
+          │
+          ▼
+       PRACTICE
+          │
+          ▼
+         QUIZ
+          │
+          ▼
+      UNDERSTANDING
+```
 
-### 🧩 50+ Practice Problems
+**The goal isn't to make algorithms look pretty.**
 
-Turn concepts into hands-on problem solving.
+**The goal is to make them understandable.**
 
-### 🧠 Built-in Quizzes
+---
 
-Check whether you actually understood the concept.
+# 🧪 Educational Features
 
-### 📚 Learn Mode
+### 📖 Learn Mode
 
-Keep theory, examples, complexity and implementation together.
+Understand the algorithm before running it.
 
-### 🐍 Pure Python
+### 🎞️ Step Execution
 
-Lightweight desktop application with Tkinter and the Python standard library.
+Break complex operations into understandable states.
 
-</div>
+### 🧩 Practice
+
+Move from passive learning to active problem solving.
+
+### 🧠 Quiz
+
+Check whether the concept actually stuck.
+
+### ⚖️ Comparison
+
+Understand when one algorithm is preferable to another.
+
+### 🔢 Custom Data
+
+Experiment beyond predefined examples.
+
+---
+
+# 🔍 Search & Discover
+
+Don't scroll through dozens of algorithms.
+
+Use the built-in search to quickly filter the algorithm library.
+
+```text
+Search:
+┌──────────────────────────────────────┐
+│ binary                               │
+└──────────────────────────────────────┘
+
+Results:
+  → Binary Search
+  → Binary Search Tree
+```
+
+The application also supports category-oriented discovery and custom data generation.
+
+---
+
+# 🛡️ User-Friendly by Design
+
+The visualizer includes robust handling for invalid input and presents friendly message boxes instead of simply crashing on bad user input.
+
+```text
+Bad Input
+    │
+    ▼
+Validate
+    │
+ ┌──┴──┐
+ │     │
+ ▼     ▼
+Valid  Invalid
+ │       │
+ ▼       ▼
+Run    Explain
+       Problem
+```
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-You can contribute by:
+Whether you want to add an algorithm, improve an animation, create a new practice problem, improve accessibility or polish the interface — you're welcome here.
 
-1. Forking the repository
-2. Creating a feature branch
-3. Adding or improving an algorithm
-4. Improving visualizations
-5. Adding practice problems
-6. Improving documentation
-7. Fixing bugs
-8. Opening a pull request
-
-Example:
+### Contribution flow
 
 ```bash
-git checkout -b feature/new-algorithm
+# 1. Fork the repository
+
+# 2. Clone your fork
+git clone https://github.com/YOUR_USERNAME/DSA-Algorithms-Visualizer-Python.git
+
+# 3. Create a branch
+git checkout -b feature/my-improvement
+
+# 4. Make your changes
+
+# 5. Commit
 git add .
-git commit -m "Add new algorithm visualization"
-git push origin feature/new-algorithm
+git commit -m "Add my improvement"
+
+# 6. Push
+git push origin feature/my-improvement
+
+# 7. Open a Pull Request
 ```
 
-Then open a Pull Request.
+### Great contribution ideas
+
+* ➕ Add new algorithm visualizations
+* 🎨 Improve UI/UX
+* 🎞️ Improve animation transitions
+* 🧩 Add practice problems
+* 🧠 Add quiz questions
+* ♿ Improve accessibility
+* 📚 Improve explanations
+* 🐛 Fix bugs
+* ⚡ Improve performance
+* 📝 Improve documentation
 
 ---
 
-# 🐛 Issues & Suggestions
+# 🗺️ Roadmap
 
-Found a bug or have an idea?
+The following are natural directions for future development:
 
-Please open an issue with:
-
-* A clear description
-* Steps to reproduce
-* Expected behavior
-* Actual behavior
-* Screenshot, if applicable
-* Python version / OS
+```text
+                    CURRENT
+                       │
+                       ▼
+             ┌──────────────────┐
+             │ 60+ ALGORITHMS   │
+             │ 50+ PROBLEMS     │
+             │ QUIZZES          │
+             │ ANIMATIONS       │
+             └────────┬─────────┘
+                      │
+        ┌─────────────┼─────────────┐
+        ▼             ▼             ▼
+   MORE ALGORITHMS  MORE UI     MORE CONTENT
+        │             │             │
+        ▼             ▼             ▼
+     Graphs       Themes       Practice
+     Trees        Accessibility Problems
+     DP           UX           Quizzes
+        │             │             │
+        └─────────────┼─────────────┘
+                      ▼
+               COMPLETE DSA
+               LEARNING SUITE
+```
 
 ---
 
-# 📄 License
+# 📜 License
 
-This project is licensed under the **MIT License**.
+This project is released under the **MIT License**.
 
-See [`LICENSE`](LICENSE) for details.
+See [`LICENSE`](LICENSE) for the complete license text.
 
 ---
 
 # ⭐ Support the Project
 
-If this project helped you learn DSA, prepare for an interview, teach algorithms, or simply explore how algorithms work:
+If this visualizer helped you:
+
+<div align="center">
 
 ### ⭐ Star the repository
 
 ### 🍴 Fork it
 
-### 🐛 Report issues
+### 🐛 Report bugs
 
-### 💡 Suggest improvements
+### 💡 Suggest ideas
 
 ### 🤝 Contribute
 
-Every contribution helps make algorithm learning more visual and accessible.
+</div>
+
+Every star helps the project reach more learners.
 
 ---
 
 <div align="center">
 
-## 🧠 Learn Algorithms Visually
+<img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:7c3aed,50:312e81,100:0f172a&animation=twinkling"/>
 
-**Algorithms are easier when you can see them.**
+# 🧠 See It. Run It. Understand It.
 
-<br>
+### **DSA becomes easier when you can watch it happen.**
 
-### Made with 🐍 Python + 💡 Algorithms + 🎨 Visualization
+<br/>
 
-<br>
+**Built with 🐍 Python · 🎨 Tkinter · 🧠 Algorithms · ❤️ Curiosity**
 
-**DSA Algorithms Visualizer**
+<br/>
+
+<a href="https://github.com/MUdevelops/DSA-Algorithms-Visualizer-Python">
+<strong>⭐ Explore the Repository</strong>
+</a>
 
 </div>
